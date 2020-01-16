@@ -1,5 +1,4 @@
 # AppNexus currency exchage rate consumer
-***
 
 A python script that use the endpoint https://api.appnexus.com/currency?show_rate=true&code=CURRENCY_CODE&ymd=2012-03-01 to pull the rate per usd for defined currencies and writes the data to SQL Server. Handles user input, logs responses and important messages and validate response before delete and insert operations.
 The script has also a version for adding new currencies, usefull in cases where you want to populate new currencies for large date range without affecting the existing currencies.
@@ -9,7 +8,7 @@ API Documentation: [Currency Service - Xandr API - Xandr Documentation](https://
 ![4a381621.png](./img/screenshot.png?row=true)
 
 ## Getting Started
-***
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ## Prerequisites
