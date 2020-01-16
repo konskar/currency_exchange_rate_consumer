@@ -110,4 +110,4 @@ py AppNexus_Exchange_Rate_pull.py --startdate day_before_yesterday
 * SQL Server
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/kostiskar/currency_exchange_rate_consumer/blob/master/README.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/kostiskar/currency_exchange_rate_consumer/blob/master/LICENSE) file for details
