@@ -55,7 +55,7 @@ USE [foo_db]
 CREATE TABLE [dbo].[appnexus_exchanges](
 	[date] [date] NULL,
 	[name] [nchar](10) NULL,
-	[rate_per_usd] [float] NULL
+	[rate_per_usd] numeric(7,6) NULL
 ) 
 ```
 
