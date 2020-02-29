@@ -14,6 +14,7 @@ import logging  # Provide logging capablities through static methods of logging 
 today = datetime.now()
 yesterday_date = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d') # Get string representation of yesterday's date
 day_before_yesterday_date = datetime.strftime(datetime.now() - timedelta(2), '%Y-%m-%d')
+fifth_day_back = datetime.strftime(datetime.now() - timedelta(5), '%Y-%m-%d')
 
 response_data_list=[]
 payload_list=[]
@@ -294,6 +295,14 @@ def parseArgument(): # Handles user arguments
 
         startdate_input = day_before_yesterday_date
         enddate_input = startdate_input
+    
+    elif startdate_input == 'last_5' and enddate_input =='up_to_yesterday':
+        startdate_input = fifth_day_back
+        enddate_input = yesterday_date
+
+    elif startdate_input == 'last_5' and enddate_input is None:
+        startdate_input = fifth_day_back
+        enddate_input = yesterday_date
 
     elif startdate_input == 'yesterday' and enddate_input is None:
 
